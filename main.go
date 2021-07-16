@@ -17,7 +17,7 @@ func main() {
 
 	// Process the templates at the start so that they don't have to be loaded
 	// from the disk again. This makes serving HTML pages very fast.
-	router.LoadHTMLGlob("/Users/dilanprasad/Documents/Fannie_Funtime/gin_test/templates/*")
+	router.LoadHTMLGlob("templates/*")
 
 	// Define the route for the index page and display the index.html template
 	// To start with, we'll use an inline route handler. Later on, we'll create
